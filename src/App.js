@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import Coin from './Coin';
 import Login from './Login'
+import Footer from './Footer'
 import ReactDOM from "react-dom";
 import { Routes, Route, Link } from "react-router-dom";
 import  { Moralis } from "moralis";
@@ -76,8 +77,9 @@ function App() {
             priceChange={coin.price_change_percentage_24h} />
         );
       })}
-    
+      <Footer/>
     </div>
+   
 
   );
 }
